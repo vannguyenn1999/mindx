@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="w-full h-screen flex justify-center items-center">
+      <div class="bg-gray-100 rounded-lg shadow-xl w-100">
+        <div class="flex justify-center px-3 py-5 relative">
+          <div>
+            <img
+              class="w-30 rounded-full inline-block ring-2 ring-white"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjI2_3kWzrk2bF1G8ASgR-K0SuxNJpVPUnXazDsE81FxVq00g4jHPyRIoIwgFXQgRQ3Cs&usqp=CAU"
+              alt="Avatar user"
+            />
+          </div>
+          <div class="absolute top-5 right-5 ...">
+            <p class="text-gray-600 cursor-pointer">&#10006;</p>
+          </div>
+        </div>
+        <form class="px-4 mt-3">
+          <!-- <div class="mb-4"> -->
+          <div>
+            <label class="block font-bold mb-2" for="username">Username</label>
+            <input
+              class="w-full p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              type="text"
+              id="username"
+              placeholder="Enter username"
+            />
+          </div>
+          <div class="my-5">
+            <label class="block font-bold mb-2" for="password">Password</label>
+            <input
+              class="w-full p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              type="password"
+              id="password"
+              placeholder="Enter password"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full p-3 bg-green-700 rounded-lg mb-3 font-medium text-white cursor-pointer hover:bg-green-600 transition-colors"
+          >
+            Login
+          </button>
+          <div class="mb-3">
+            <input
+              class="accent-blue-500 text-balance me-1"
+              type="checkbox"
+              checked
+            />
+            Remember me
+          </div>
+        </form>
+        <div class="px-4 py-5 bg-gray-300 flex justify-between items-center">
+          <button
+            type="button"
+            class="w-25 p-2 bg-red-700 rounded-lg font-medium text-white cursor-pointer hover:bg-red-600 transition-colors"
+          >
+            Cannel
+          </button>
+          <a href="#" class="text-blue-500 hover:underline">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
