@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+/* header */
+
+header {
+  max-width: 100%;
+  height: 72px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header-nav {
+    #header-nav_home {
+      color: #ff782d;
+      background-color: #f5f5f5;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      padding: 20px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  .header-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* max-width: 198px; */
+    button {
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      background-color: #ffffff;
+    }
+    img {
+      max-width: 35px;
+      max-height: 48px;
+    }
+  }
+}
+
+main {
+  /* min-height: 5979px; */
+}
+
+footer {
+  /* height: 552px; */
+  /* max-width: 1920px; */
+  background-color: #f5f5f5;
+  padding-bottom: 32px;
+  position: relative;
+
+  .footer-container {
+    max-width: 1290px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 2fr;
+      gap: 0 15px;
+      padding-top: 30px;
+
+      .footer-top_col1 {
+        img {
+          max-width: 166px;
+          margin-bottom: 20px;
+        }
+
+        p {
+          max-width: 341px;
+          font-size: 14px;
+          color: #555555;
+        }
+      }
+
+      .footer-top_col2,
+      .footer-top_col3,
+      .footer-top_col4 {
+        h4 {
+          font-size: 16px;
+          font-weight: 700;
+
+          margin-bottom: 20px;
+        }
+
+        ul {
+          padding: 10px 0;
+          list-style: none;
+          color: #555555;
+          max-width: 410px;
+          li {
+            margin-bottom: 10px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .footer-center {
+      padding: 30px;
+    }
+    .footer-bottom {
+      /* height: 59px; */
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding-top: 32px;
+
+      border-top: 1px solid #555555;
+
+      p {
+        font-size: 14px;
+        color: #999999;
+      }
+    }
+
+    .footer-icon {
+      position: absolute;
+      bottom: 75px;
+      right: 50px;
+      img {
+        max-width: 40px;
+        cursor: pointer;
+      }
+    }
+  }
+}
