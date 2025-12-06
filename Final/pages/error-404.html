@@ -10,9 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/login.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/error-404.css" />
   </head>
   <body>
     <header>
@@ -24,96 +24,27 @@
         <a href="./course-type1.html">Courses</a>
         <a href="/python/">Blog</a>
         <a href="/python/">Page</a>
-        <a href="../index.html">LearnPress Add-On</a>
-        <a href="./error-404.html">Premium Theme</a>
+        <a href="./index.html">LearnPress Add-On</a>
+        <a href="./index.html">Premium Theme</a>
       </nav>
-
       <div class="header-login">
-        <img id="header-tag_bar" src="../asset/Header/Tag_bar.png" alt="" />
         <button class="header-login_btn">Login / Register</button>
         <img src="../asset/Header/Search.png" alt="" />
       </div>
     </header>
     <main>
-      <div class="main-login__header">
-        <div class="main-login__header--content">
+      <div class="main-error__header">
+        <div class="main-error__header--content">
           <p class="content-1">Homepage</p>
           <p class="content-3">&gt;</p>
-          <p class="content-2">Login / Register</p>
+          <p class="content-2">FAQs</p>
         </div>
       </div>
       <div class="container">
-        <div class="main-login__form">
-          <div class="main-login__form--login">
-            <div class="login-header">
-              <h2>Login</h2>
-            </div>
-            <form action="#" class="login-form">
-              <input
-                type="text"
-                name="username"
-                id="username"
-                placeholder="Email or usename*"
-              />
-
-              <div class="form-password">
-                <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  placeholder="Password*"
-                />
-                <img src="../asset/Login/Icon.png" alt="" />
-              </div>
-              <div class="form-group">
-                <input
-                  type="checkbox"
-                  name="remeber_password"
-                  id="remeber_password"
-                />
-                <label for="remeber_password">Remember me</label>
-              </div>
-              <button type="button">Login</button>
-              <p>Lost your password?</p>
-            </form>
-          </div>
-          <div class="main-login__form--register">
-            <div class="login-header">
-              <h2>Register</h2>
-            </div>
-            <form action="#" class="login-register">
-              <input type="text" name="email" id="email" placeholder="Email*" />
-              <input
-                type="text"
-                name="username"
-                id="username"
-                placeholder="Usename*"
-              />
-
-              <div class="form-password">
-                <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  placeholder="Password*"
-                />
-                <img src="../asset/Login/Icon.png" alt="" />
-              </div>
-
-              <div class="form-password">
-                <input
-                  type="password"
-                  name="confirm_password"
-                  id="confirm_password"
-                  placeholder="Confirm Password*"
-                />
-                <img src="../asset/Login/Icon.png" alt="" />
-              </div>
-
-              <button type="button">Register</button>
-            </form>
-          </div>
+        <div class="error-header">
+          <!-- <h2>Error</h2> -->
         </div>
+        <img id="img-error" src="../asset/Error/404.png" alt="Error 404" />
       </div>
     </main>
     <footer>
