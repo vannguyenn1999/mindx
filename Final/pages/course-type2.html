@@ -22,10 +22,10 @@
         /></a>
       </div>
       <nav class="header-nav">
-        <a id="header-nav_home" href="#">Home</a>
-        <a href="/js/">Courses</a>
-        <a href="/python/">Blog</a>
-        <a href="/python/">Page</a>
+        <a id="header-nav_home" href="../index.html">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Blog</a>
+        <a href="#">Page</a>
         <a href="../index.html">LearnPress Add-On</a>
         <a href="./error-404.html">Premium Theme</a>
       </nav>
@@ -35,6 +35,11 @@
         <button class="header-login_btn">
           <a href="./login.html">Login / Register</a>
         </button>
+        <img
+          src="../asset/Header/ninja-profile.png"
+          alt="avatar user"
+          id="avatar-user"
+        />
         <img src="../asset/Header/Search.png" alt="" />
       </div>
     </header>
@@ -57,7 +62,12 @@
 
             <div class="form">
               <div class="input-wrap">
-                <input type="text" name="" id="" placeholder="Search" />
+                <input
+                  type="text"
+                  name="search"
+                  id="search"
+                  placeholder="Search"
+                />
                 <img
                   id="form-search"
                   src="../asset/Course/Icon (3).png"
@@ -75,7 +85,10 @@
           </div>
           <div class="content--left__main2">
             <!-- ? Item 1 -->
-            <div class="main-courses_list--item">
+            <div
+              class="main-courses_list--item"
+              id="create-an-lms-website-with-learnpress"
+            >
               <div class="main-courses_list--item--img">
                 <img
                   src="../asset/Home/Courses/Course_1.png"
@@ -109,7 +122,10 @@
             </div>
 
             <!-- ? Item 2 -->
-            <div class="main-courses_list--item">
+            <div
+              class="main-courses_list--item"
+              id="design-a-website-with-thimpress"
+            >
               <div class="main-courses_list--item--img">
                 <img
                   src="../asset/Home/Courses/Course_2.png"
@@ -141,7 +157,10 @@
             </div>
 
             <!-- ? Item 3 -->
-            <div class="main-courses_list--item">
+            <div
+              class="main-courses_list--item"
+              id="create-an-lms-website-with-learnpress-2"
+            >
               <div class="main-courses_list--item--img">
                 <img
                   src="../asset/Home/Courses/Course_3.png"
@@ -173,7 +192,7 @@
             </div>
 
             <!-- ? Item 4 -->
-            <div class="main-courses_list--item">
+            <div class="main-courses_list--item" id="bai-viet-so-4">
               <div class="main-courses_list--item--img">
                 <img
                   src="../asset/Home/Courses/Course_4.png"
@@ -205,7 +224,7 @@
             </div>
 
             <!-- ? Item 5 -->
-            <div class="main-courses_list--item">
+            <div class="main-courses_list--item" id="bai-viet-so-5">
               <div class="main-courses_list--item--img">
                 <img
                   src="../asset/Home/Courses/Course_5.png"
@@ -237,7 +256,7 @@
             </div>
 
             <!-- ? Item 6s -->
-            <div class="main-courses_list--item">
+            <div class="main-courses_list--item" id="bai-viet-so-6">
               <div class="main-courses_list--item--img">
                 <img
                   src="../asset/Home/Courses/Course_6.png"
@@ -536,10 +555,13 @@
           <p>Copyright © 2024 LearnPress LMS | Powered by ThimPress</p>
         </div>
 
-        <div class="footer-icon">
+        <div class="footer-icon" id="btn-footer">
           <img src="../asset/Footer/Footer-icon.png" alt="footer icon" />
         </div>
       </div>
     </footer>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/page-type-1.js"></script>
   </body>
 </html>

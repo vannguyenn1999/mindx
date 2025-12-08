@@ -177,7 +177,7 @@
     transition: transform 0.45s cubic-bezier(0.25, 0.8, 0.25, 1),
       box-shadow 0.45s cubic-bezier(0.25, 0.8, 0.25, 1);
     will-change: transform, box-shadow;
-    position: relative;
+    /* position: relative; */
 
     img {
       width: 100%;
@@ -218,7 +218,7 @@
       .main-courses_list--item--content-3 {
         width: 89%;
         border-top: 1px solid #eaeaea;
-        position: absolute;
+        /* position: absolute; */
         bottom: 5%;
         display: flex;
         justify-content: space-between;
