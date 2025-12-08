@@ -1,10 +1,33 @@
 const LOCAL_HREF_PATH = "http://127.0.0.1:5500/";
-
+const PATH = document.URL;
 const avatarUser = document.querySelector("#avatar-user");
 const divLogin = document.querySelector(".header-login_btn");
 
-// ? Hiển thị avatar khi đã đăng nhập thành công
+switch (PATH) {
+  case `${LOCAL_HREF_PATH}index.html`:
+    const divHome = document.querySelector("#header-nav_home");
+    divHome.style.backgroundColor = "#f5f5f5";
+    divHome.style.color = "#ff782d";
+    break;
+
+  case `${LOCAL_HREF_PATH}pages/course-type1.html`:
+    const divCourse = document.querySelector("#header-nav_course");
+    divCourse.style.backgroundColor = "#f5f5f5";
+    divCourse.style.color = "#ff782d";
+    break;
+
+  case `${LOCAL_HREF_PATH}pages/course-type2.html`:
+    const divCourse2 = document.querySelector("#header-nav_course");
+    divCourse2.style.backgroundColor = "#f5f5f5";
+    divCourse2.style.color = "#ff782d";
+    break;
+
+  default:
+    break;
+}
+
 if (localStorage.getItem("login")) {
+  // ? Hiển thị avatar khi đã đăng nhập thành công
   avatarUser.style.display = "block";
   divLogin.style.display = "none";
 } else {
