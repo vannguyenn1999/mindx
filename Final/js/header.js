@@ -2,10 +2,10 @@ const LOCAL_HREF_PATH = "http://127.0.0.1:5500/";
 const PATH = document.URL;
 const avatarUser = document.querySelector("#avatar-user");
 const divLogin = document.querySelector(".header-login_btn");
+const divHome = document.querySelector("#header-nav_home");
 
 switch (PATH) {
   case `${LOCAL_HREF_PATH}index.html`:
-    const divHome = document.querySelector("#header-nav_home");
     divHome.style.backgroundColor = "#f5f5f5";
     divHome.style.color = "#ff782d";
     break;
@@ -23,6 +23,8 @@ switch (PATH) {
     break;
 
   default:
+    divHome.style.backgroundColor = "#f5f5f5";
+    divHome.style.color = "#ff782d";
     break;
 }
 

@@ -38,43 +38,49 @@ hiddenPass2.style.display = "none";
 hiddenPass3.style.display = "none";
 
 // ? Chức năng hiển thị mật khẩu
+const changePass = (type) => {
+  switch (type) {
+    case 1:
+      checkPass1 = !checkPass1;
+      if (checkPass1) {
+        userPassword.type = "text";
+        hiddenPass1.style.display = "block";
+        showPass1.style.display = "none";
+      } else {
+        userPassword.type = "password";
+        hiddenPass1.style.display = "none";
+        showPass1.style.display = "block";
+      }
+      break;
 
-const changePass1 = () => {
-  checkPass1 = !checkPass1;
-  if (checkPass1) {
-    userPassword.type = "text";
-    hiddenPass1.style.display = "block";
-    showPass1.style.display = "none";
-  } else {
-    userPassword.type = "password";
-    hiddenPass1.style.display = "none";
-    showPass1.style.display = "block";
-  }
-};
+    case 2:
+      checkPass2 = !checkPass2;
+      if (checkPass2) {
+        userPasswordRegister.type = "text";
+        hiddenPass2.style.display = "block";
+        showPass2.style.display = "none";
+      } else {
+        userPasswordRegister.type = "password";
+        hiddenPass2.style.display = "none";
+        showPass2.style.display = "block";
+      }
+      break;
 
-const changePass2 = () => {
-  checkPass2 = !checkPass2;
-  if (checkPass2) {
-    userPasswordRegister.type = "text";
-    hiddenPass2.style.display = "block";
-    showPass2.style.display = "none";
-  } else {
-    userPasswordRegister.type = "password";
-    hiddenPass2.style.display = "none";
-    showPass2.style.display = "block";
-  }
-};
+    case 3:
+      checkPass3 = !checkPass3;
+      if (checkPass3) {
+        userPasswordConfirmRegister.type = "text";
+        hiddenPass3.style.display = "block";
+        showPass3.style.display = "none";
+      } else {
+        userPasswordConfirmRegister.type = "password";
+        hiddenPass3.style.display = "none";
+        showPass3.style.display = "block";
+      }
+      break;
 
-const changePass3 = () => {
-  checkPass3 = !checkPass3;
-  if (checkPass3) {
-    userPasswordConfirmRegister.type = "text";
-    hiddenPass3.style.display = "block";
-    showPass3.style.display = "none";
-  } else {
-    userPasswordConfirmRegister.type = "password";
-    hiddenPass3.style.display = "none";
-    showPass3.style.display = "block";
+    default:
+      break;
   }
 };
 
@@ -148,8 +154,16 @@ btnRegister.onclick = function () {
       (item) => item.email == userEmailRegister.value.trim()
     );
 
+    const checkUserRegister = arrUserRegister.find(
+      (item) => item.username == userNameRegister.value.trim()
+    );
     if (checkEmailRegister) {
       alert("Email này đã được đăng ký");
+      return;
+    }
+
+    if (checkUserRegister) {
+      alert("User này đã được đăng ký");
       return;
     }
   }

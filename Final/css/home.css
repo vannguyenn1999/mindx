@@ -14,6 +14,8 @@ main {
     position: relative;
 
     img {
+      object-fit: cover;
+      object-position: top center;
       max-width: 100%;
     }
 
@@ -51,8 +53,6 @@ main {
   }
 
   .main-menu {
-    /* margin: 100px 0; */
-
     .main-menu_categories {
       display: grid;
       grid-template: repeat(2, 234px) / repeat(5, 1fr);
@@ -372,8 +372,6 @@ main {
 
 @media screen and (max-width: 1300px) {
   main {
-    /* max-width: 900px; */
-
     .main-header {
       max-width: 100%;
       .main-header_content {
